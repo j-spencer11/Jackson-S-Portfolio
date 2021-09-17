@@ -46,12 +46,15 @@ header nav ul li {
     float: right;
     margin-right: 50px;
     border: 5px solid cyan;
+    transition: 0.5s ease-in-out;
 }
 section a img{
     width: 45%;
     display: inline-block;
     border: 5px solid cyan;
     margin-left: 50px;
+    filter: grayscale(1);
+    transition: 0.5s ease-in-out;
 }
 article p{
     padding: 25px;
@@ -70,14 +73,17 @@ h2{
 #work2{
     width: 30%;
     margin-left: 75px;
+    filter: grayscale(1);
+    transition: 0.5s ease-in-out;
 }
 #contactme{
-
+    display: inline-block;
 }
 h3{
     margin-left: 100px;
     padding-bottom: 30px;
     padding-top: 10px;
+    text-decoration: underline;
 }
 footer{
     background-color: lightgreen;
@@ -90,4 +96,35 @@ footer ul li a{
     text-decoration: none;
     border-bottom: 2px solid black;
     padding-bottom: 2px;
+}
+.me img:hover{
+    height: 750px;
+    width: 600px;
+    transition: 0.5s ease-in-out;
+}
+section a img:hover{
+    filter: grayscale(0);
+    transition: 0.5s ease-in-out;
+}
+#work2:hover{
+    filter: grayscale(0);
+    transition: 0.5s ease-in-out;
+}
+
+
+@media screen and (max-width: 992px) {
+    section a img {
+        width: 66%;
+    }
+    #work2 {
+        width: 40%;
+    }
+}
+@media screen and (max-width:768px) {
+    section a img {
+        width: 85%;
+    }
+    #work2 {
+        width: 50%;
+    }
 }
